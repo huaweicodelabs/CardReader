@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_user"
+        android:orderInCategory="300"
+        android:title="@string/user"
+        android:icon="@drawable/ic_baseline_person_white_add_24"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="300"
+        android:title="@string/delete"
+        android:icon="@drawable/ic_baseline_white_delete_24"
+        app:showAsAction="ifRoom"/>
+
+</menu>

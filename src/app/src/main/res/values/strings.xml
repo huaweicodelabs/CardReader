@@ -1,0 +1,323 @@
+<!--
+  ~ /*
+  ~  * Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+  ~  *
+  ~  *    Licensed under the Apache License, Version 2.0 (the "License");
+  ~  *    you may not use this file except in compliance with the License.
+  ~  *    You may obtain a copy of the License at
+  ~  *
+  ~  *      http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  *    Unless required by applicable law or agreed to in writing, software
+  ~  *    distributed under the License is distributed on an "AS IS" BASIS,
+  ~  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  *    See the License for the specific language governing permissions and
+  ~  *    limitations under the License.
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">CardReader</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="businesscard">Hongkong Profile Cards</string>
+    <string name="IDCard">Business cards</string>
+    <string name="generalIDCard">General ID cards</string>
+    <string name="BankCards">Bank cards</string>
+    <string name="Settings">Settings</string>
+    <string name="back">back</string>
+    <string name="bcr_s">Bank Card Recognition</string>
+    <string name="bcr_upload_self_photo">"Please upload the bank card"</string>
+    <string name="bcr_upload">Upload card</string>
+    <string name="icr_hint_ensure_user_info_security">Your personal information will be protected in accordance with the law.</string>
+    <string name="camera_permission_rationale">This sample app requires camera, storage, and microphone
+        permissions in order to demo the API.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">cancel</string>
+    <string name="ucr_s">General Card Recognition</string>
+    <string name="gcr">GCR</string>
+    <string name="gcr_upload_self_photo">Upload photos of your card</string>
+    <string name="gcr_upload">Upload card</string>
+    <string name="hk_pass">Hong Kong, Macao and Taiwan pass</string>
+    <string name="hk_id_card">Hong Kong Identity Card</string>
+    <string name="home_card">Mainland Travel Permit (Hong Kong, Macao, and Taiwan residents)</string>
+    <string name="recognition_results">Recognition results:</string>
+    <string name="name">Name :</string>
+    <string name="fathername">Father Name :</string>
+    <string name="dob">Date of Birth :</string>
+    <string name="pnum">Pan Number :</string>
+    <string name="aadharnum">Aadhar No :</string>
+    <string name="gender">Gender :</string>
+    <string name="result">Result</string>
+    <string name="save">Save</string>
+    <string name="savedcards">Saved Cards</string>
+    <string name="NO_TEXT">No Text Recognized</string>
+    <string name="REC_FAILED">RecFailed</string>
+    <string name="WALK_THROUGH_1">Card Reader App that converts your paper card into a digital card.</string>
+    <string name="WALK_THROUGH_2">You just have to Scan card and store it with just one tap and keep all you cards in digital format.</string>
+    <string name="WALK_THROUGH_3">Any Time if user want to see the card details, just open the app and click on the card.</string>
+    <string name="select_from_album">Select image from album</string>
+    <string name="take_photo">Take photo</string>
+    <string name="video_frame">Video stream</string>
+    <string name="versions">Version:</string>
+    <string name="simplified_chinese">Simplified chinese</string>
+    <string name="english_choose">English</string>
+    <string name="japanese_choose">Japanese</string>
+    <string name="korean_choose">Korean</string>
+    <string name="latin_choose">Latin</string>
+    <string name="get_data_failed">Failed to get data.</string>
+    <string name="loading_data">Loading…</string>
+    <string name="chinese">Chinese</string>
+    <string name="nonetwork">nonetwork</string>
+    <string name="abnormal">service is abnormal</string>
+    <string name="speak_abnormal">Language and speaker do not match</string>
+    <string name="replay">replay</string>
+    <string name="click_to_switch"><u>Click to switch</u></string>
+    <string name="vedio_tip">Recognizing, please align the edges.</string>
+    <string name="capture_tip">Taking photo…\nKeep the edges aligned</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="AppConditionText">This App uses Below mentioned authentication to secure your data</string>
+    <string name="PINLock_Text">Click Below to Authenticate using Device PIN/Pattern</string>
+    <string name="PIN_SUCCESS">PIN LOCK SUCCESS</string>
+    <string name="PIN_FAILURE">Enter PIN LOCK is Wrong, Please try again</string>
+    <string name="FP_AUTH_CHECK">Can not authenticate using Fingerprint OR Fingerprint not set for this device. errorCode=</string>
+    <string name="FACEREC_AUTH_CHECK">Can not authenticate using Face Recognition OR FaceRecognition not set for this device. errorCode=</string>
+    <string name="FACEREC_SUPPORT_ERROR">FaceRecognition does not support in your device</string>
+    <string name="FP_DEVICE_SUPPORT_ERROR">FingerPrint Doesnot support in your device</string>
+    <string name="AGREE_TO_PROCEED">Please Agree to proceed</string>
+    <string name="AUTH_SUGGESTION_MSG">Please secure your device using any of the below" +
+                            "\n\"PIN Lock\" " +
+                            " Or \"FingerPrint\"" +
+                            " Or \"Face Recognition\"</string>
+    <string name="cardrepresentation">BankCard</string>
+    <string name="extended_carddetails">Card Details</string>
+    <string name="Name">Name</string>
+    <string name="Namecol">Name:</string>
+    <string name="ACNumbercol">A/C Number:</string>
+    <string name="Validtillcol">Valid till:</string>
+    <string name="Typecol">Type:</string>
+    <string name="JobTitle">Job Title</string>
+    <string name="Company">Company</string>
+    <string name="Phno">Phno</string>
+    <string name="QRCodeshare">QRCode share</string>
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="SMS">SMS</string>
+    <string name="Addtocontact">Add to contact</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Website">Website</string>
+    <string name="list_empty">List is empty please scan the card</string>
+    <string name="scan_card">Scan Card</string>
+    <string name="saved_general_card">Saved General Cards</string>
+    <string name="saved_bank_card">Saved Bank Cards</string>
+    <string name="delete_dialog">Do you want to delete this card?</string>
+    <string name="Deleted_the_card">Deleted the card</string>
+    <string name="DocumentSkew">Document Skew</string>
+    <string name="contacts">Contacts</string>
+
+    <string name="pancard_number">PanNo</string>
+    <string name="aadharcard_number">AaadharNo</string>
+    <string name="dateofbirth">DOB</string>
+    <string name="cardType">CardType</string>
+    <string name="panCardDetails">PanCard Details</string>
+    <string name="businessCardDetails">BusinessCard Details</string>
+    <string name="aadharDetails">AadharCard Details</string>
+    <string name="expireDate">ExpireDate</string>
+    <string name="type">Type</string>
+    <string name="accNumber">A/C Number</string>
+    <string name="pleasescancard">Please scan card</string>
+    <string name="numberexist">Number already exist in contact</string>
+    <string name="category">Category</string>
+    <string name="ScantheCard">Click \'+\' to scan the Card</string>
+    <string name="addcard">Add Card</string>
+    <string name="Agree_Page_Title">Agreement Page</string>
+    <string name="FACE_AUTH_CAMERA_PERMISSION_NOT_ENABLED">The camera permission is not enabled. Please enable it and try again.</string>
+    <string name="FACE_CAMERA_MAY_NOT_BE">\" The camera permission may not be enabled.\"</string>
+    <string name="FACE_AUTH_ERROR">Authentication error. errorCode=</string>
+    <string name="FACE_AUTH_HELP">Authentication help. helpMsgId=</string>
+    <string name="FACE_AUTH_SUCCESS">Authentication succeeded.</string>
+    <string name="FACE_AUTH_FAIL">Authentication failed.</string>
+    <string name="FP_AUTH_ERROR">Authentication error. errorCode=</string>
+    <string name="FP_AUTH_FAILED">Authentication failed.</string>
+    <string name="FP_PROMPT_HEAD">Fingerprint Authentication.</string>
+    <string name="FP_PROMPT_TITLE">Scan Fingerprint</string>
+    <string name="FP_PROMPT_DESC">Use your Device Fingerprint to Authenticate</string>
+    <string name="PIN_LOCK_TITLE">PIN LOCK Authentication</string>
+    <string name="PIN_LOCK_DESC">Re-Enter Your Device PIN to authentication</string>
+    <string name="AUTHENTICATION_PAGE_TITLE">User Authentication</string>
+    <string name="clickonitem">click on item:</string>
+    <string name="cardImage">Card Image</string>
+    <string name="AUTH_RESULT">Authentication Result</string>
+    <string name="FACE_CANNOT_AUTH">"Can not authenticate. errorCode="</string>
+    <string name="PINLOCK_SUGGESTION_MSG">PIN Lock Not Support or PIN Lock Not set for this devie</string>
+    <string name="sdcard_path">/sdcard/</string>
+    <string name="sdcard__filepath">/sdcard/test.pdf</string>
+    <string name="something_wrong">Something wrong:</string>
+    <string name="fileprovider_path">com.example.cardreader.fileprovider</string>
+    <string name="DisplayImages">DisplayImages</string>
+    <string name="imageperson">imageperson</string>
+    <string name="imgecard1">imagecard1</string>
+    <string name="imgemail">imgemail</string>
+    <string name="imgphono">imgphono</string>
+    <string name="imgshare">imgshare</string>
+    <string name="imgarea">imgarea</string>
+    <string name="imgphone">imgphone</string>
+    <string name="imgscan">TODO</string>
+    <string name="qrshare">TODO</string>
+    <string name="sms">TODO</string>
+    <string name="imgmai">TODO</string>
+    <string name="imgaddcontact">TODO</string>
+    <string name="imgphno1">TODO</string>
+    <string name="email1">Email Address</string>
+    <string name="update">Update</string>
+    <string name="imgcompany">TODO</string>
+    <string name="imgwebsite">TODO</string>
+    <string name="aadharcardimg">TODO</string>
+    <string name="aadharperson">TODO</string>
+    <string name="imgaadahar">TODO</string>
+    <string name="aadhararaea">TODO</string>
+    <string name="qrshar1">TODO</string>
+    <string name="imgcard">TODO</string>
+    <string name="imgpancard">TODO</string>
+    <string name="imgpancardperson">TODO</string>
+    <string name="impan">TODO</string>
+    <string name="imgpanarea">TODO</string>
+    <string name="qrcode2">TODO</string>
+    <string name="pancardimg1">TODO</string>
+    <string name="bankcardimga">TODO</string>
+    <string name="imgemptylist">TODO</string>
+    <string name="imgcamera">TODO</string>
+    <string name="imgbottomcamera">TODO</string>
+    <string name="imglock">TODO</string>
+    <string name="locked">Locked</string>
+    <string name="imgqr">TODO</string>
+    <string name="delete">Delete</string>
+    <string name="qrName">Name- </string>
+    <string name="qrMobileno">MobileNo- </string>
+    <string name="qrCompanyName">CompanyName- </string>
+    <string name="qrEmailId">EmailId- </string>
+    <string name="qrCardType">CardType- </string>
+    <string name="qrAadhaarId">AadhaarId- </string>
+    <string name="qrDOB">DOB- </string>
+    <string name="qrPanNumber">PanNumber- </string>
+    <string name="qrAcNumber">A/C Number-</string>
+    <string name="qrIssuer">Issuer- </string>
+    <string name="qrBankType">BankType- </string>
+    <string name="qrExpiryDate">ExpiryDate- </string>
+    <string name="qrBankOrganization">BankOrganization- </string>
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="organization">Organization:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="targetPdf">/sdcard/test.pdf</string>
+    <string name="sdcardPath">/sdcard/</string>
+    <string name="whiteColor">#ffffff</string>
+    <string name="testPdf">test.pdf</string>
+    <string name="fileProvider">com.huawei.cardreader.fileprovider</string>
+    <string name="applicationPdf">application/pdf</string>
+    <string name="sharePdf">Share PDF</string>
+    <string name="enterAllFields">Enter all the fields</string>
+    <string name="updatedRecord">Updated Record</string>
+    <string name="tel">tel:</string>
+    <string name="sendMailUsing">Send mail using...</string>
+    <string name="subject">SUBJECT</string>
+    <string name="intentEmailType">vnd.android.cursor.item/email</string>
+    <string name="smsParse">sms:</string>
+    <string name="hi">Hi</string>
+    <string name="xxx">XXX</string>
+    <string name="en">en</string>
+    <string name="intentPackage">package:</string>
+    <string name="saving">Saving</string>
+    <string name="panOutName">name</string>
+    <string name="panOutFatherName">fatherName</string>
+    <string name="panOutNumber">pan</string>
+    <string name="panOutDob">dob</string>
+    <string name="aadharOutName">name</string>
+    <string name="aadharOutNumber">aadhaar</string>
+    <string name="aadharOutGender">gender</string>
+    <string name="aadharOutFatherName">fatherName</string>
+    <string name="aadharOutDob">dob</string>
+    <string name="aadharOutYob">yob</string>
+    <string name="aadharOutBirth">Birth:</string>
+    <string name="businessOutText">text</string>
+    <string name="businessOutName">name</string>
+    <string name="businessOutPhoneNumber">phonenum</string>
+    <string name="businessOutEmail">email</string>
+    <string name="businessOutOrganization">org</string>
+    <string name="splash">splash</string>
+    <string name="firstTime">firstTime</string>
+    <string name="successFullyDeleted">Successfully deleted</string>
+    <string name="aadharRegex">\\d\\d\\d\\d([,\\s])?\\d\\d\\d\\d.*</string>
+    <string name="panRegex">\w\w\w\w\w\d\d\d\d.*</string>
+
+    <string name="cardType_bankCard">BankCard</string>
+    <string name="aadharcard_processing">aadhaar</string>
+    <string name="aadharcard_slash">/</string>
+    <string name="pancardprocessing_slash">/</string>
+    <string name="readContactPermission">android.permission.READ_CONTACTS</string>
+    <string name="MyToDos">MyToDos</string>
+    <string name="errorMessage">,errorMessage=</string>
+    <string name="helpString">,helpString=</string>
+    <string name="pin_lock_authentication">Pin Lock Authentication</string>
+    <string name="lockimage">lockimage</string>
+    <string name="fingerprint_authentication">Fingerprint Authentication</string>
+    <string name="_3d_face_recognition">3D Face Recognition</string>
+    <string name="agree_to_proceed">Agree to Proceed</string>
+    <string name="click_below_to_authenticate_using_fingerprint">Click below to Authenticate using Fingerprint</string>
+    <string name="click_below_to_authenticate_using_facerecognition">Click below to Authenticate using FaceRecognition</string>
+    <string name="or">OR</string>
+    <string name="card_reader_n_easy_way_to_scan_and_n_save_cards">Card Reader \n easy way to scan and \n save cards</string>
+    <string name="business_card">Business Card</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="aadhar_card">Aadhar Card</string>
+    <string name="card_reader">Card Reader</string>
+    <string name="user">User</string>
+    <string name="slashn">\n</string>
+    <string name="contact_enter_name">Enter name</string>
+    <string name="contact_enter_phno">Enter PhoneNumber</string>
+    <string name="contact_enter_email">Enter Email Id</string>
+
+    <string name="valid_till">VALID TILL</string>
+    <string name="card_number_hint">ENTER CARD NUMBER</string>
+    <string name="expiry_date_hint">MM/YY</string>
+    <string name="card_name_hint">ENTER CARD NAME</string>
+    <string name="card_logo">Card Logo</string>
+    <string name="brand_logo">Brand Logo</string>
+    <string name="chip_visible">Chip Visible</string>
+    <string name="authorized_signature">Authorized Signature</string>
+    <string name="cvv_hint">cvv</string>
+
+    <!-- Bank CardView Font Path starts after `assets/` -->
+   <string name="font_path">fonts/robotoblack.ttf</string>
+    <string name="todo">TODO</string>
+    <string name="card_number_cannot_benull">Card Number cannot be null.</string>
+    <string name="CardNumberFormat">\"CardNumberFormat: \"</string>
+    <string name="isNotSupport">\"is not supported. Use `CardNumberFormat.*` or `CardType.ALL_DIGITS` if \"</string>
+    <string name="unknown">unknown</string>
+    <string name="CardType">\"CardType: \"</string>
+    <string name="isNotSuppot">\"  is not supported. \"</string>
+    <string name="ifKnown">Use `CardType.*` or `CardType.AUTO` if unknown</string>
+    <string name="creditCardFormat">\"CreditCardFormat: \"</string>
+    <string name="creditCardNotSupport">\" is not supported. Use `CreditCardFormat.*`\"</string>
+    <string name="rotationY">rotationY</string>
+    <string name="alpha">alpha</string>
+
+
+</resources>

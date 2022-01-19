@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  * Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
+  ~  *  *
+  ~  *  *    Licensed under the Apache License, Version 2.0 (the "License");
+  ~  *  *    you may not use this file except in compliance with the License.
+  ~  *  *    You may obtain a copy of the License at
+  ~  *  *
+  ~  *  *      http://www.apache.org/licenses/LICENSE-2.0
+  ~  *  *
+  ~  *  *    Unless required by applicable law or agreed to in writing, software
+  ~  *  *    distributed under the License is distributed on an "AS IS" BASIS,
+  ~  *  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  *  *    See the License for the specific language governing permissions and
+  ~  *  *    limitations under the License.
+  ~  *
+  ~  */
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlHardcoded">
+
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/valid_till"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/card_number_margin_bottom"
+        android:layout_marginLeft="@dimen/card_common_margin"
+        android:layout_marginRight="@dimen/card_common_margin"
+        android:layout_weight="1"
+        android:background="@color/card_text_background"
+        android:inputType="number"
+        android:maxLength="@integer/card_number_max_length"
+        android:textSize="@dimen/card_number_text_size"
+        android:textColor="@color/white"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/card_common_margin"
+        android:layout_marginLeft="@dimen/card_common_margin"
+        android:layout_weight="1"
+        android:background="@color/card_text_background"
+        android:ellipsize="end"
+        android:inputType="textCapCharacters"
+        android:maxLength="@integer/card_name_max_length"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textSize="@dimen/card_name_text_size"
+        tools:ignore="LabelFor,UnusedAttribute"
+        android:textColor="@color/white"
+        android:autofillHints="" />
+
+    <ImageView
+        android:id="@+id/card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/card_common_margin"
+        android:layout_marginRight="@dimen/card_common_margin"
+        android:layout_weight="1"
+        android:contentDescription="@string/card_logo" />
+
+    <ImageView
+        android:id="@+id/brand_logo"
+        android:layout_width="@dimen/brand_logo_width"
+        android:layout_height="@dimen/brand_logo_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/card_common_margin"
+        android:layout_marginRight="@dimen/card_common_margin"
+        android:layout_marginTop="@dimen/card_common_margin"
+        android:contentDescription="@string/brand_logo" />
+
+    <ImageView
+        android:id="@+id/chip"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/card_number"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/card_common_margin"
+        android:layout_marginLeft="@dimen/card_common_margin"
+        android:background="@drawable/card_chip"
+        android:contentDescription="@string/chip_visible"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/valid_till"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/card_name"
+        android:layout_marginBottom="@dimen/card_common_margin"
+        android:layout_toLeftOf="@+id/expiry_date"
+        android:text="@string/valid_till"
+        android:textSize="@dimen/valid_till_text_size"
+        tools:ignore="SmallSp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/expiry_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/card_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/card_common_margin"
+        android:layout_marginLeft="@dimen/expiry_date_margin_left"
+        android:layout_marginStart="@dimen/expiry_date_margin_left"
+        android:layout_weight="1"
+        android:background="@color/card_text_background"
+        android:inputType="date"
+        android:maxLength="@integer/expiry_date_max_length"
+        android:singleLine="true"
+        android:textSize="@dimen/expiry_date_text_size"
+        android:textColor="@color/white"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <ImageButton
+        android:id="@+id/flip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:visibility="gone"
+        android:contentDescription="@string/todo" />
+
+    <View
+        android:id="@+id/stripe"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/cardbackground_stripe"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/authorized_sig_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/stripe"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:text="@string/authorized_signature"
+        android:visibility="gone"
+        />
+
+    <View
+        android:id="@+id/signature"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/card_background_signature"
+        android:layout_below="@id/authorized_sig_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/cvv_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/signature"
+        android:layout_alignTop="@id/signature"
+        android:visibility="gone"
+        android:background="@color/card_text_background"
+        android:inputType="number"
+        android:maxLength="@integer/cvv_max_length"
+        android:singleLine="true"
+        android:textSize="@dimen/cvv_text_size"
+        android:textColor="@color/white"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+
+    <View
+        android:layout_width="@dimen/dummy_view_params"
+        android:layout_height="@dimen/dummy_view_params"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+</merge>
